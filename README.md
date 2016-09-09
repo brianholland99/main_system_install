@@ -3,8 +3,8 @@ Initial minimal installation steps for my main development system + salt.
 
 ## Overview
 
-This repo contains the steps for the initial install for a minimal Ubuntu
-16.04 server install with an initial salt master/minion. Additional software
+This repo contains the steps for the initial minimal install from an Ubuntu
+16.04 server ISO with an initial salt master/minion. Additional software
 and configuration will controlled via salt.
 
 ## Phases
@@ -17,7 +17,7 @@ The installation from the server installation ISO is straightforward for my
 setup. Most defaults were correct. At some point, I would like to use one
 of the two automated install methods to remove most of the human interaction.
 
-[Follow these installation steps](./initial.markdown)
+[Follow these installation steps](./initial.md)
 
 ### Post installation upgrade
 
