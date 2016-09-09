@@ -31,9 +31,9 @@ Boot system from the USB ISO and then follow the steps below:
 11. Username for your account: brian [enter]
 12. Choose a password for the new user: [... ; enter]
 13. Re-enter password to verify: [... ; enter]
-14. Encrypt your home directory? <No> [enter]
-15. ... America/New_York. ... Is this time zone correct? <Yes> [enter]
-16. Unmount partitions that are in use? <No> [select "<Yes>"; enter]
+14. Encrypt your home directory? No [enter]
+15. ... America/New_York. ... Is this time zone correct? Yes [enter]
+16. Unmount partitions that are in use? No [select "Yes"; enter]
 17. Partitioning method: [I have two disks so set up the following:]
   1. Disk 1 - 120 GB SSD
     1. 200 MB primary ext4 /boot (bootable) - format
@@ -43,13 +43,13 @@ Boot system from the USB ISO and then follow the steps below:
     1. LVM VG ubuntu 500 GB - set to ext4 /home -
        format (first time - keep data for reinstalls)
   3. [select "Finish partitioning and write changes to disk"; enter]
-18. Write the changes to disks? <No> [select "<Yes>"; enter]
+18. Write the changes to disks? No [select "Yes"; enter]
 19. HTTP proxy information (blank for none): [enter]
 20. How do you want to manage upgrades on this system?
     No automatic updates [enter]
 21. Choose software to install: (Only "standard system utilties" was
     selected by default.) [enter]
-22. Install the GRUB boot loader to the master boot record? <Yes> [enter]
+22. Install the GRUB boot loader to the master boot record? Yes [enter]
 23. Device for the boot loader installation: Enter device manually
     [select "/dev/sda"; enter]
 24. Installation is complete ... remove installation media ... <Continue>
