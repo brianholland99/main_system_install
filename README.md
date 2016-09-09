@@ -4,13 +4,12 @@ Initial minimal installation steps for my main development system + salt.
 ## Overview
 
 This repo contains the steps for the initial install for a minimal Ubuntu
-16.04 server install with an initial salt master/minion. The salt states
-will be loaded from a separate repo. Additional software and configuration
-will controlled via salt.
+16.04 server install with an initial salt master/minion. Additional software
+and configuration will controlled via salt.
 
 ## Phases
 
-The install is currently separated into four phases.
+The install is currently separated into three phases.
 
 ### Initial install from Ubuntu 16.04 server ISO
 
@@ -46,10 +45,9 @@ As root, run the following script substituting for MINION_ID:
 
 `setup-salt.sh MINION_ID`
 
-### Finish setup of system
+## Summary
 
-The rest of the system setup is done via salt. I will be pulling the salt states
-from a separate repo.
-
-1. Load salt states
-2. Run `salt MINION_ID state.apply`
+At this point, the system will have an initial install with a salt master and
+minion setup. All that is needed is to add salt states and apply them. For my
+main development system, I will be pulling those salt states from a separate
+repo.
