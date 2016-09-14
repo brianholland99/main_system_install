@@ -5,7 +5,8 @@ Initial minimal installation steps for my main development system + salt.
 
 This repo contains the steps for the initial minimal install from an Ubuntu
 16.04 server ISO with an initial salt master/minion. Additional software
-and configuration will controlled via salt.
+and configuration will controlled via salt. This system will also control
+several VMs and other systems too.
 
 ## Phases
 
@@ -37,9 +38,8 @@ the "latest" PPA for saltstack. That hosts the 2016.3.3 version of the Ubuntu
 package. The 2015.8.8 version supplied by the default repos has an issue of
 printing a warning when executing certain commands.
 
-The script preseeds the key to the master rather than use salt-key to accept
-one sent by a minion. The direct copy avoids a small window for another system
-to connect with the same minion_id before the local minion does.
+The script preseeds the key since it is locally available and avoids needing
+to accept the key with salt-key.
 
 As root, run the following script substituting for MINION_ID:
 
