@@ -1,0 +1,9 @@
+#### Contents of the preconfiguration file (for xenial)
+### Localization
+# Preseeding only locale sets language, country and locale.
+d-i debian-installer/locale string en_US
+d-i console-setup/ask_detect boolean false
+d-i keyboard-configuration/xkb-keymap select us
+# The following might be eno2 instead.
+d-i netcfg/choose_interface select en02
+# TODO: Add remaining instructions
