@@ -41,7 +41,14 @@ Boot system from the USB ISO and then follow the steps below:
     3. 17 GB logical swap swap - format
   2. Disk 2 - 2 TB
     1. LVM VG ubuntu 500 GB - set to ext4 /home -
-       format (first time - keep data for reinstalls)
+       format - first time.  Varies after that.
+       To get a clean home directory, they can be
+       copied to /m and choosing to format /home.
+       That allows comparing to see differences in
+       default configuration and also the
+       ability to restore data files.
+    2. LVM VG ubuntu 1500 GB - set to ext4 /m -
+       format (first time - keep date for reinstalls)
   3. [select "Finish partitioning and write changes to disk"; enter]
 18. Write the changes to disks? No [select "Yes"; enter]
 19. HTTP proxy information (blank for none): [enter]
