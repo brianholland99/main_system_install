@@ -29,6 +29,6 @@ sed -i "s/^timeout 0$/timeout ${BOOT_TIMEOUT}/" ${ISO_LINUX}/isolinux.cfg
 
 cp ${PRESEED_FILES} ${TMP_DIR}/custom_iso/preseed/
 
-#cd ${TMP_DIR}/custom_iso
-mkisofs -r -V "UBUNTU1604" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ./ubuntu-16.04.1-server-amd64-autoinstall.iso ${TMP_DIR}/custom_iso
+cd ${TMP_DIR}/custom_iso
+mkisofs -r -V "UBUNTU1604" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../ubuntu-16.04.1-server-amd64-autoinstall.iso .
 

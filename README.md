@@ -20,6 +20,14 @@ of the two automated install methods to remove most of the human interaction.
 
 [Follow these installation steps](./initial.md)
 
+Some preliminary files have been added to automate the initial part of the
+install.
+
+**Note: There have been issues making custom bootable USB thumb drives.**
+
+See [bootable USB thumb drive issues](./bootable-USB-thumb-drive-issues.md)
+for details.
+
 ### Post installation upgrade
 
 The second phase is to upgrade and reboot the system. This will also include
