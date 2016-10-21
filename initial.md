@@ -36,8 +36,8 @@ Boot system from the USB ISO and then follow the steps below:
 16. Unmount partitions that are in use? No [select "Yes"; enter]
 17. Partitioning method: [I have two disks so set up the following:]
   1. Disk 1 - 120 GB SSD
-    1. 200 MB primary ext4 /boot (bootable) - format
-    2. 107 GB logical ext4 / - format
+    1. 2 GB primary ext4 /boot (bootable) - format
+    2. 100 GB logical ext4 / - format
     3. 17 GB logical swap swap - format
   2. Disk 2 - 2 TB
     1. LVM VG ubuntu 500 GB - set to ext4 /home -
