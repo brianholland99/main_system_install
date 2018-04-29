@@ -12,7 +12,7 @@ several VMs and other systems too.
 
 The install is currently separated into three phases.
 
-### Initial install from Ubuntu 16.04 server ISO
+### Initial install from Ubuntu 18.04 Desktop ISO
 
 The installation from the server installation ISO is straightforward for my
 setup. Most defaults were correct. At some point, I would like to use one
