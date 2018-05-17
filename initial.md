@@ -30,51 +30,56 @@ Connect DVI monitor for install.
 
 Boot system from the USB ISO and then follow the steps below:
 
-1. Keyboard Layout -> English (US) / English (US)
+1. Welcome screen -> English
 
-   ==> [enter]
+   ==> Select 'Install Ubuntu'.
 
-2. Updates and other software -> Normal installation / Download updates
-   while installing Ubuntu are enabled
+2. Keyboard Layout -> English (US) / English (US)
+
+   ==> Select 'Continue'
+
+3. Updates and other software -> Normal installation / Download updates
+   while installing Ubuntu are enabled.
   
    ==> Enable "Install third-party software for graphics and Wi-Fi hardware
-   and addtional media formats" then hit [enter]
+   and addtional media formats" then select 'Continue'.
 
-3. Some option will be default based on what OS's are there.
+4. Installation type -> Some option will be default based on what OS's are there.
    One of these options may have worked and left 2nd disk
    as is and mounted on same points after they had been set up
-   previously.  Chose the option that appeared to give me control.
+   previously.  I chose the option that appeared to give me control.
    The one that included LVM may have done the right thing, but
    this worked for me. I wasn't going to chance it and then
    have to restore 2nd disk from backups.
 
-   ==> Select "Something Else" and hit [enter]
+   ==> Select 'Something Else' then select 'Continue'.
 
-4. Partitioning method: [I have two disks so set up the following:]
-  1. Disk 1 - 120 GB SSD
-    1. 2 GB primary ext4 /boot (bootable) - format
-    2. 118 GB logical ext4 / - format
-  2. Disk 2 - 2 TB
-    1. LVM VG ubuntu 500 GB - set to ext4 /home -
-       format - first time.  Varies after that.
-       To get a clean home directory, they can be
-       copied to /m and choosing to format /home.
-       That allows comparing to see differences in
-       default configuration and also the
-       ability to restore data files.
-    2. LVM VG ubuntu 1500 GB - set to ext4 /m -
-       format (first time - keep date for reinstalls)
-  3. Device for boot loader installation - /dev/sda
+5. Installation type (sub menu) ->
+ 
+   1. Disk 1 - 120 GB SSD
+      1. 2 GB primary ext4 /boot (bootable) - format
+      2. 118 GB logical ext4 / - format
+   2. Disk 2 - 2 TB
+      1. LVM VG ubuntu 500 GB - set to ext4 /home -
+         format - first time.  Varies after that.
+         To get a clean home directory, they can be
+         copied to /m and choosing to format /home.
+         That allows comparing to see differences in
+         default configuration and also the
+         ability to restore data files.
+      2. LVM VG ubuntu 1500 GB - set to ext4 /m -
+         format (first time - keep date for reinstalls)
+   3. Device for boot loader installation - /dev/sda
   
-   ==> Click "Install Now"
+   ==> Click 'Install Now'.
    
 5. Write the changes to disks?
 
-   ==> Click "Continue"
+   ==> Select 'Continue'.
 
 6. Where are you? New York
 
-   ==> Click "Continue"
+   ==> Select 'Continue'.
 
 7. Your name: ==> Brian Holland
    Your computer's name: ==> bhdesk
@@ -83,11 +88,11 @@ Boot system from the USB ISO and then follow the steps below:
    Confirm your password: ==> ...
    Require my password to log in (selected)
    
-   ==> Click "Continue"
+   ==> Select 'Continue'.
 
 8. Installation is complete ...
 
-   ==> Remove USB and Click "Restart Now"
+   ==> Remove USB and Select 'Restart Now'.
 
 9. Please remove the installation medium, the reboot.
 
@@ -97,7 +102,7 @@ Boot system from the USB ISO and then follow the steps below:
 
    ==> Log in. Type "ubuntu-drivers devices". It should
    show at least one NVIDIA driver with recommended next
-   to it. To install that one, type "sudo -i ubuntu-drivers
+   to it. To install that one, type "sudo ubuntu-drivers
    autoinstall".
 
 11. Turn off Wi-Fi.
