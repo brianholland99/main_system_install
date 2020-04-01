@@ -1,0 +1,29 @@
+#!/bin/bash
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 MINION_ID"
+    exit 1
+fi
+
+MINION_ID=$1
+SALT_CONF=/etc/salt
+SALT_PKI=/var/lib/salt/pki  # This is where the Ubuntu package places pki data.
+
+MIN_KEY_DIR=${SALT_PKI}/minion
+MASTER_MINS_KEY_DIR=${SALT_PKI}/master/minions
+
+
+apt-get install -y salt-master
+
+mkdir ${SALT_CONF}/minion.d
+echo 'master: 127.0.0.1' > ${SALT_CONF}/minion.d/master.conf
+
+
+mkdir ${SALT_PKI}/minion  # Master install did not create this dir.
+# Ubuntu will run salt-key as salt by default, force root as writing directly.
+salt-key --user=root --gen-keys-dir=${SALT_PKI}/minion --gen-keys=minion
+
+# Now pre-seed master
+cp ${SALT_PKI}/minion/minion.pub ${SALT_PKI}/master/minions/${MINION_ID}
+
+# Install minion
+apt-get install -y salt-minion

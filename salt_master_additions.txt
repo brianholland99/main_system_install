@@ -1,0 +1,5 @@
+file_roots:
+  base:
+    - /srv/salt
+    - /srv/formulas/openssh-formula
+    - /srv/formulas/users-formula
