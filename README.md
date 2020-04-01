@@ -1,10 +1,12 @@
 # main_system_install
 Initial minimal installation steps for my main development system + salt.
 
+## In progress of changing from Ubuntu 16.04 to Ubuntu 18.04.
+
 ## Overview
 
 This repo contains the steps for the initial minimal install from an Ubuntu
-16.04 server ISO with an initial salt master/minion. Additional software
+18.04 server ISO with an initial salt master/minion. Additional software
 and configuration will controlled via salt. This system will also control
 several VMs and other systems too.
 
@@ -12,7 +14,7 @@ several VMs and other systems too.
 
 The install is currently separated into three phases.
 
-### Initial install from Ubuntu 16.04 server ISO
+### Initial install from Ubuntu 18.04 Desktop ISO
 
 The installation from the server installation ISO is straightforward for my
 setup. Most defaults were correct. At some point, I would like to use one
