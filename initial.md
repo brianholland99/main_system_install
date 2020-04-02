@@ -2,12 +2,12 @@
 
 ## Overview
 
-Current install is normal install of Ubuntu 18.04 Desktop ISO.
+Current install is normal install of Ubuntu 20.04 Desktop ISO.
 Most of the defaults work for me. I indicate the choices
 I made during the install and is notated by the information after the
 '==>'.
 
-For partitioning, I did not use gudided as I have two disks and wanted
+For partitioning, I did not use guided as I have two disks and wanted
 /home on the 2nd disk.  I will eventually look at using one or both of the
 automated configuration methods to do the below.  It is only in description
 at this moment.  This is the only OS on the system as I will be using
