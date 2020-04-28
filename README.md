@@ -1,7 +1,7 @@
 # main_system_install
 Initial minimal installation steps for my main development system + salt.
 
-## In progress of changing from Ubuntu 16.04 to Ubuntu 18.04.
+## In progress of changing from Ubuntu 16.04 to Ubuntu 20.04.
 
 ## Overview
 
@@ -14,9 +14,9 @@ several VMs and other systems too.
 
 The install is currently separated into three phases.
 
-### Initial install from Ubuntu 18.04 Desktop ISO
+### Initial install from Ubuntu 20.04 Desktop ISO
 
-The installation from the server installation ISO is straightforward for my
+The installation from the desktop installation ISO is straightforward for my
 setup. Most defaults were correct. At some point, I would like to use one
 of the two automated install methods to remove most of the human interaction.
 
