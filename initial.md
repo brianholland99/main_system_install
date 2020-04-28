@@ -38,11 +38,11 @@ Boot system from the USB ISO and then follow the steps below:
 
    ==> Select 'Continue'
 
-3. Updates and other software -> Normal installation / Download updates
+3. Updates and other software -> Minimal installation / Download updates
    while installing Ubuntu are enabled.
   
-   ==> Enable "Install third-party software for graphics and Wi-Fi hardware
-   and addtional media formats" then select 'Continue'.
+   Leave "Install third-party software for graphics and Wi-Fi hardware
+   and addtional media formats" disabled then select 'Continue'.
 
 4. Installation type -> Some option will be default based on what OS's are there.
    One of these options may have worked and left 2nd disk
