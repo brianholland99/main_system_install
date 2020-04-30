@@ -2,7 +2,7 @@
 
 ## Overview
 
-Current install is normal install of Ubuntu 20.04 Desktop ISO.
+Current install starts with a minimal install of the Ubuntu 20.04 Desktop ISO.
 Most of the defaults work for me. I indicate the choices
 I made during the install and is notated by the information after the
 '==>'.
@@ -40,10 +40,9 @@ Boot system from the USB ISO and then follow the steps below:
 
 3. Updates and other software -> Minimal installation / Download updates
    while installing Ubuntu are enabled.
+   
+   ==> Select 'Continue'
   
-   Leave "Install third-party software for graphics and Wi-Fi hardware
-   and addtional media formats" disabled then select 'Continue'.
-
 4. Installation type -> Some option will be default based on what OS's are there.
    One of these options may have worked and left 2nd disk
    as is and mounted on same points after they had been set up
